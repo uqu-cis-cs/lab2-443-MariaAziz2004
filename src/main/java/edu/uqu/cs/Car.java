@@ -22,6 +22,9 @@ public class Car{
      *
      */
 
+    private String model;
+    private boolean inOutGarage;
+
     /************ Part 2 **************/
     /**
      * Define a default constructor and set 
@@ -34,6 +37,13 @@ public class Car{
      * }
      */
 
+    public Car() {
+
+        this.model = "";
+        this.inOutGarage = false;
+
+    }
+
     /************ Part 3 **************/
     /**
      * Define all getter methods below
@@ -45,6 +55,17 @@ public class Car{
      */
 
 
+    public String getModel(){
+
+        return model;
+    }
+
+    public boolean getinOutGarage() {
+
+        return inOutGarage;
+
+    }
+
     /************ Part 4 **************/
     /**
      * Define all setter methods below
@@ -55,6 +76,17 @@ public class Car{
      *
      */
 
+    public void setModel(String model) {
+        
+        this.model = model;
+
+    }
+
+    public void setinOutGarage(boolean inOutGarage) {
+
+        this.inOutGarage = inOutGarage;
+
+    }
 
     /************ Part 5 **************/
     /**
@@ -64,6 +96,15 @@ public class Car{
      *
      */
 
+    public void moveCarIn() {
 
+        this.inOutGarage = true;
 
+    }
+
+    public void moveCarOut() {
+
+        this.inOutGarage = false;
+        
+    }
 }
